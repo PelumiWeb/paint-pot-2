@@ -3,19 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>painpot.com</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
-    crossorigin="anonymous"
-  />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
 </head>
 <body>
     <section class="first_section">
+       
         <div class="style">
+            <button onclick="prev()"
+            class="prev"><i class="fas fa-backward"></i>
+            </button>
+            <button onclick="prev()"
+            class="next">
+            <i class="fas fa-forward"></i>
+            </button>
+            <div class="image_container-front">
+                <div class="images">
+                    <img id="slider" src="./images/Images-14.jpg" alt="">
+                </div>
+             </div>
+        </div>
             <div class="paint_container">
                 <img src="./images/AuntyLola Logo (13).jpeg" alt="">
             </div>
@@ -266,6 +280,35 @@
             navigation2.classList.toggle('active')
 
         })
+
+        const images = [
+        './images/Images-14.jpg',
+        'https://images.pexels.com/photos/1669754/pexels-photo-1669754.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+        './images/Images-3.jpg'
+    ]
+    let num = 0;
+    const next = () => {
+        const slider = document.getElementById('slider');
+        num++;
+        if (num >= images.length) {
+            num = 0
+        }
+        slider.src = images[num]
+    }
+
+    setInterval(next, 5000)
+
+    const prev = () => {
+        const slider = document.getElementById('slider');
+        num--;
+        if (num < 0) {
+            num = images.length-1
+        }
+        slider.src = images[num]
+    }
+
+
+
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
