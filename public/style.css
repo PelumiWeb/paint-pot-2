@@ -183,12 +183,14 @@ https://images.unsplash.com/photo-1583853605328-c65d4b640643?ixlib=rb-1.2.1&ixid
   position: absolute;
   bottom: 31%;
   left: 2%;
+  border-radius: 10px;
 }
 
 .paint_container img {
   object-fit: contain;
   width: 6rem;
   height: 6rem;
+  border-radius: 10px;
 }
 
 @media (max-width: 600px) {
@@ -440,6 +442,7 @@ https://images.unsplash.com/photo-1583853605328-c65d4b640643?ixlib=rb-1.2.1&ixid
   bottom: 33%;
   right: 5%;
   border: none;
+  border-radius: 5px;
 }
 
 .get_started a {
@@ -1069,7 +1072,7 @@ https://images.unsplash.com/photo-1583853605328-c65d4b640643?ixlib=rb-1.2.1&ixid
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
-  outline: non;
+  outline: none;
 }
 
 .next {
