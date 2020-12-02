@@ -180,8 +180,8 @@ https://images.unsplash.com/photo-1583853605328-c65d4b640643?ixlib=rb-1.2.1&ixid
 
 @media (max-width: 400px) {
   .logo img {
-    width: 4rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
   }
 
   .logo h1 {
@@ -331,16 +331,10 @@ https://images.unsplash.com/photo-1583853605328-c65d4b640643?ixlib=rb-1.2.1&ixid
 
 .intro_text {
   position: absolute;
-  top: 29%;
-  right: 40%;
+  top: 25%;
+  right: 25%;
 
   /* transform: translate(-50%, -50%); */
-}
-
-@media (max-width: 300px) {
-  .intro_text {
-    font-size: /;
-  }
 }
 
 .intro_text h1 {
@@ -388,13 +382,18 @@ https://images.unsplash.com/photo-1583853605328-c65d4b640643?ixlib=rb-1.2.1&ixid
 }
 @media (max-width: 500px) {
   .intro_text {
-    right: 28%;
+    right: 25%;
   }
   .intro_text h1 {
     font-size: 0.8rem;
   }
   .intro_text span:nth-child(1) {
     font-size: 2rem;
+  }
+}
+@media (max-width: 350px) {
+  .intro_text {
+    right: 8%;
   }
 }
 
@@ -536,7 +535,6 @@ https://images.unsplash.com/photo-1583853605328-c65d4b640643?ixlib=rb-1.2.1&ixid
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
 }
 .content {
   padding: 10px 20px;
@@ -571,6 +569,7 @@ https://images.unsplash.com/photo-1583853605328-c65d4b640643?ixlib=rb-1.2.1&ixid
   font-size: 2rem;
   text-transform: uppercase;
   color: #2ecc71;
+  font-family: var(--font-family-1);
 }
 
 .products {
@@ -626,6 +625,10 @@ https://images.unsplash.com/photo-1583853605328-c65d4b640643?ixlib=rb-1.2.1&ixid
   color: ;
   font-size: 2rem;
   font-family: var(--font-family-1);
+}
+
+.card p {
+  font-size: 1.5rem;
 }
 
 @media (max-width: 800px) {
@@ -998,6 +1001,7 @@ https://images.unsplash.com/photo-1583853605328-c65d4b640643?ixlib=rb-1.2.1&ixid
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
+  margin-top: 5rem;
   padding: 0.5rem 0.5rem;
   background-color: var(--secondary-color);
 }
@@ -1049,11 +1053,26 @@ https://images.unsplash.com/photo-1583853605328-c65d4b640643?ixlib=rb-1.2.1&ixid
   font-family: var(--font-family-1);
   color: rgb(143, 136, 136);
   font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 619px) {
   .about-us p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 360px) {
+  .about-us {
+    margin-top: 2.5rem;
+  }
+  .about-us p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-us p {
+    font-size: 0.6rem;
   }
 }
 
@@ -1105,6 +1124,7 @@ https://images.unsplash.com/photo-1583853605328-c65d4b640643?ixlib=rb-1.2.1&ixid
 
 .image_container {
   width: 100%;
+  height: 20rem;
 }
 
 .style:hover button {
