@@ -54,14 +54,12 @@
     <div class="logo">
         <div class="logo_home">
             <a href="./index.html">
-                <img src="./images/logo_paintpot-2.jpeg" alt="">
+                <img src="./images/transparentt.png" alt="">
             </a>
     </div>
 </header>
-
-    
+<h2>Projects</h2>
     <div class="projects">
-        <h2>Projects</h2>
         <div class="projects_images">
             <img src="./images/AuntyLola Logo (5).jpeg" alt="">
         </div>
@@ -201,6 +199,21 @@
         navigation2.classList.toggle('active')
 
     })
+
+    const nav2 = document.querySelectorAll('.nav_2')
+        const navArr = Array.from(nav2)
+        console.log(navArr)
+           
+        const clicked = () => {
+            menu.classList.toggle('active')
+            navigation2.classList.toggle('active')
+            console.log('clicked')
+        }
+            navArr.forEach(e => {
+                console.log(e)
+                e.addEventListener('click', clicked)
+            })
+
 </script>
 </section>
 </body>

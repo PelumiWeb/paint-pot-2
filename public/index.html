@@ -27,7 +27,7 @@
             </button>
             <div class="image_container-front">
                 <div class="images">
-                    <img id="slider" src="./images/last_image-1.jpg" alt="">
+                    <img id="slider" src="./images/last_image-2.jpg" alt="">
                 </div>
              </div>
         </div>
@@ -69,7 +69,7 @@
                    <a href="./About_us.html">About Us</a> 
                 </div>
                 <div class="nav_2 home">
-                   <a href="#Products">Products</a> 
+                   <a href="#products">Products</a> 
                 </div>
                 <div class="nav_2 home">
                    <a href="#services">Services</a> 
@@ -84,7 +84,7 @@
             <div class="logo">
                 <div class="logo_home">
                     <a href="./index.html">
-                <img src="./images/logo_paintpot-2.jpeg" alt="">
+                <img src="./images/transparentt.png" alt="">
             </a>
             <!-- <h1><span> Paint</span> <span>Pot.</span> </h1> -->
             </div>
@@ -93,8 +93,9 @@
         <div class="intro_text">
             <h1>
                 <span>Paint Pot</span>
+                <span>...Lets</span>
                 <span>color</span>
-                <span>your world</span> 
+                <span>your world.</span> 
             </h1>
         </div>
         <button class="get_started">
@@ -113,14 +114,14 @@
                 </p>
             </div>
             <div class="image_container">
-            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="./images/pixel-1 (1).jpg" alt="">
            
         </div>
         </div>
         <div class="works Branding">
 
         <div class="image_container">
-            <img src="./images/Images-12.jpg" alt="">
+            <img src="./images/AuntyLola Logo (3).jpeg" alt="">
         </div>
         <div class="content">
             <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, excepturi.</h2>
@@ -170,7 +171,7 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, molestias dolorum quas asperiores exercitationem tempore cum facere repellendus cumque impedit?</p>
     </div>
     <div class="card">
-        <h2>Textured</h2>
+        <h2>Lorem ipsum</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, molestias dolorum quas asperiores exercitationem tempore cum facere repellendus cumque impedit?</p>
     </div>
 </div>
@@ -269,11 +270,25 @@
             menu.classList.toggle('active')
             navigation.classList.toggle('active')
             navigation2.classList.toggle('active')
-
         })
 
+        const nav2 = document.querySelectorAll('.nav_2')
+        const navArr = Array.from(nav2)
+        console.log(navArr)
+           
+        const clicked = () => {
+            menu.classList.toggle('active')
+            navigation2.classList.toggle('active')
+            console.log('clicked')
+        }
+            navArr.forEach(e => {
+                console.log(e)
+                e.addEventListener('click', clicked)
+            })
+        
+
         const images = [
-        './images/last_image-1.jpg',
+        './images/last_image-2.jpg',
         './images/pixel-1 (5).jpg',
         './images/Images-3.jpg'
     ]
